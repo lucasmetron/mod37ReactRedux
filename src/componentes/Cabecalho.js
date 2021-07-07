@@ -1,8 +1,15 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-function Cabecalho() {
+function Cabecalho(props) {
+
+    const contador = useSelector(state => { return state });
+
     return (
-        <div>cabecalho</div>
+        <div>
+            <h3>Contador</h3>
+            <div>{contador} Cabeçalho</div>
+        </div>
     );
 }
 
