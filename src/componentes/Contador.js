@@ -4,7 +4,7 @@ import { increment, decrement } from '../actions/countadorActions'; //importando
 
 function Contador(props) {
 
-    const contador = useSelector(state => { return state.counter }); //traz o estado e podemos retornar todos os reducers que hoverem, como so tem o count vai retornar só ele
+    const contador = useSelector(state => { return state.counter }); ////De todos os estados dentro de ‘state’ selecionamos apenas o counter.
     const dispatch = useDispatch(); //função para enviar o dispatch
 
     return (
