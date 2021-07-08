@@ -2,14 +2,17 @@ import React from 'react';
 import './App.css';
 import Cabecalho from './componentes/Cabecalho';
 import Contador from './componentes/Contador';
-import { createStore, combineReducers } from 'redux'; //função createStore
+import { createStore, combineReducers } from 'redux'; //função createStore, e combineReducers
 import { Provider } from 'react-redux'; //Funciona como o contextAPI
 import contadorReducer from './reducers/contadorReducer'; //Reducer que criamos 
 
 function App() {
-  const allReducerss = combineReducers({ counter: contadorReducer })
 
-  const store = createStore(allReducerss);
+  const allReducers = combineReducers({
+    counter: contadorReducer,
+  })//Coloque todos os reducers aqui
+
+  const store = createStore(allReducers);
 
 
   return (
