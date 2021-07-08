@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'; //hooks que acessa o estado do redux
 
 function Cabecalho(props) {
 
-    const contador = useSelector(state => { return state }); //traz o estado e podemos retornar todos os reducers que hoverem, como so tem o count vai retornar só ele
+    const contador = useSelector(state => { return state.counter }); //traz o estado e podemos retornar todos os reducers que hoverem, como so tem o count vai retornar só ele
 
     return (
         <div>

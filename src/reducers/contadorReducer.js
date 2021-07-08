@@ -1,9 +1,9 @@
 export default function contadorReducer(state = 0, action) {
     switch (action.type) {
-        case 'INCREMENTE':
+        case 'INCREMENT':
             return state + action.payload;
 
-        case 'DECREMENTE':
+        case 'DECREMENT':
             return state - action.payload;
 
         default:
